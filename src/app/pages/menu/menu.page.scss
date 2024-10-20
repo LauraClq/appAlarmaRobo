@@ -1,0 +1,40 @@
+.btn-cerrar {
+  font-size: 15px;
+  box-shadow: 0 4px 7px 2px rgb(0 0 0 / 67%); /* Sombra para dar profundidad */
+  transition: transform 0.3s ease; /* Transición suave */
+}
+
+.full-screen-button {
+  height: 90vh; /* Set height to 100% of viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 7px 2px rgb(0 0 0 / 67%); /* Sombra para dar profundidad */
+  transition: transform 0.3s ease; /* Transición suave */
+}
+
+@media (min-width: 1024px) {
+  .full-screen-button {
+    height: 100px; /* Aumentar tamaño en pantallas más grandes */
+  }
+}
+
+/* Adjust the size for portrait orientation */
+@media screen and (orientation: landscape) {
+  .alarma{
+    width: 270px;
+    object-fit: contain;
+  }
+  .full-screen-button {
+    height: 75vh;
+  }
+
+}
+
+/* Adjust the size for landscape orientation with height less than 850px */
+@media screen and (orientation: landscape) and (max-height: 850px) {
+
+  .alarma {
+    max-width: 60%; /* Make the image smaller */
+  }
+}

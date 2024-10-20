@@ -1,0 +1,51 @@
+.container {
+  text-align: center;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 10vh;
+}
+
+.centrado {
+  width: 100vw;
+  height: 100vh;
+  flex: auto;
+  align-items: center;
+}
+
+body {
+  position: relative;
+  overflow: hidden; // Asegura que el pseudo-elemento no se desborde
+  background: none;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../../../assets/fondo-menu-arma.png") no-repeat fixed center;
+  // background: url("../../../assets/img/fondoLogin.webp") no-repeat center center / cover;
+  filter: blur(
+    1px
+  ); // Ajusta el valor de blur según la cantidad de desenfoque deseada
+  z-index: -1; // Asegura que el pseudo-elemento esté detrás del contenido
+}
+
+.form-container {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+ion-icon {
+  margin-right: 10px;
+  width: 30px;
+}
+
+.logo {
+  width: 15rem;
+  height: auto;
+  margin: auto;
+}

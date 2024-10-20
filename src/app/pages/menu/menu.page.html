@@ -1,0 +1,30 @@
+<ion-content class="ion-padding"  [ngStyle]="{'--background': backgroundColor}">
+  <ion-button
+    expand="block"
+    (click)="cerrarSesion()"
+    class="btn-cerrar"
+    color="primary"
+    style="font-weight: bold;"
+    >Cerrar Sesión
+    <ion-icon
+      name="log-out"
+      style="margin-left: 5px; margin-bottom: 3px"
+    ></ion-icon>
+  </ion-button>
+  <ion-row>
+    <ion-col>
+      <ion-button
+        class="full-screen-button"
+        expand="block"
+        [color]="alarmOnOff ? 'danger' : 'success'"
+        (click)="cambiarAlarma()"
+      >
+        <img
+          [src]="alarmOnOff ? '../../assets/alarma-activada.png' : '../../assets/alarma-desactivada.png'"
+          alt="foto alarma"
+          class="alarma"
+        />
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>

@@ -1,0 +1,176 @@
+body{
+  position: relative;
+  overflow: hidden; // Asegura que el pseudo-elemento no se desborde
+  background: none; // Elimina el fondo del body para que solo se vea el pseudo-elemento
+}
+
+.centrado{
+  width: 100vw;
+  height: 100vh;
+  flex: auto;
+  align-items: center;
+
+}
+
+//gato icono png
+.icono {
+    margin-top: 25%;
+    width: 85%;
+}
+
+.icono-alarma {
+    position: absolute;
+    width: 10rem;
+    transform: translate(20px, -40px);
+}
+
+.custom-texto{
+    margin-top: 35px;
+    width: 350px;
+}
+
+.aclonica-regular {
+  font-family: "Aclonica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-size: 27px;
+  text-align: center;
+}
+
+
+.color-change-2x {
+	-webkit-animation: color-change-2x 2s linear infinite alternate both;
+	        animation: color-change-2x 2s linear infinite alternate both;
+}
+
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #f8a18d;
+  }
+  100% {
+    background: #f18fbb;
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background: #f8a18d;
+  }
+  100% {
+    background: #f18fbb;
+  }
+}
+
+//animacion letra
+.tracking-in-expand {
+    -webkit-animation: tracking-in-expand .7s cubic-bezier(.215, .61, .355, 1.000) both;
+    animation: tracking-in-expand .7s cubic-bezier(.215, .61, .355, 1.000) both
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -.5em;
+        opacity: 0
+    }
+
+    40% {
+        opacity: .6
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -.5em;
+        opacity: 0
+    }
+
+    40% {
+        opacity: .6
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+//aniamcion de icono de alarma
+.wobble-hor-bottom {
+    -webkit-animation: wobble-hor-bottom .8s infinite both;
+    animation: wobble-hor-bottom .8s infinite both
+}
+
+@-webkit-keyframes wobble-hor-bottom {
+
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%
+    }
+
+    15% {
+        -webkit-transform: translateX(-30px) rotate(-6deg);
+        transform: translateX(-30px) rotate(-6deg)
+    }
+
+    30% {
+        -webkit-transform: translateX(15px) rotate(6deg);
+        transform: translateX(15px) rotate(6deg)
+    }
+
+    45% {
+        -webkit-transform: translateX(-15px) rotate(-3.6deg);
+        transform: translateX(-15px) rotate(-3.6deg)
+    }
+
+    60% {
+        -webkit-transform: translateX(9px) rotate(2.4deg);
+        transform: translateX(9px) rotate(2.4deg)
+    }
+
+    75% {
+        -webkit-transform: translateX(-6px) rotate(-1.2deg);
+        transform: translateX(-6px) rotate(-1.2deg)
+    }
+}
+
+@keyframes wobble-hor-bottom {
+
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%
+    }
+
+    15% {
+        -webkit-transform: translateX(-30px) rotate(-6deg);
+        transform: translateX(-30px) rotate(-6deg)
+    }
+
+    30% {
+        -webkit-transform: translateX(15px) rotate(6deg);
+        transform: translateX(15px) rotate(6deg)
+    }
+
+    45% {
+        -webkit-transform: translateX(-15px) rotate(-3.6deg);
+        transform: translateX(-15px) rotate(-3.6deg)
+    }
+
+    60% {
+        -webkit-transform: translateX(9px) rotate(2.4deg);
+        transform: translateX(9px) rotate(2.4deg)
+    }
+
+    75% {
+        -webkit-transform: translateX(-6px) rotate(-1.2deg);
+        transform: translateX(-6px) rotate(-1.2deg)
+    }
+}
